@@ -11,7 +11,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*  # Clean up to reduce image size
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install --only-upgrade -y zlib1g zlib1g-dev && \
+    apt-get install --only-upgrade  zlib=zlib1g-dev@1:1.2.13.dfsg-1 && \
     rm -rf /var/lib/apt/lists/*  # Cleanup
 COPY graphserver.js .
 EXPOSE  4000
