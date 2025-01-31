@@ -1,4 +1,4 @@
-FROM node:18-buster
+FROM node@18.20.6
 RUN apt-get update && \
     apt-get install -y --only-upgrade git=1:2.20.1-2+deb10u9 && \
     apt-get install -y --only-upgrade git-man=1:2.20.1-2+deb10u9 && \
