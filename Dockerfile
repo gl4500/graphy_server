@@ -1,4 +1,4 @@
-FROM node:18.20.6
+FROM 18.20.6-alpine3.21
 COPY package.json .
 COPY UScities.json .
 RUN npm install &&\
