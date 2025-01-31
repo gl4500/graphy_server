@@ -1,4 +1,4 @@
-FROM node:18-buster
+FROM node:18.20.6
 COPY package.json .
 COPY UScities.json .
 RUN npm install &&\
