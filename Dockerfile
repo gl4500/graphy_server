@@ -1,4 +1,4 @@
-FROM node:23.6.1-bookworm-slim
+FROM node:23.10.0-bookworm-slim
 COPY package.json .
 COPY UScities.json .
 RUN npm install &&\
